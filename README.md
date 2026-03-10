@@ -1,6 +1,6 @@
 # 🚗 CarSharing Report with SQL Queries
 
-A end-to-end data analysis project using a real car-sharing dataset (Jan 2017 – Aug 2018). The project covers data cleaning in Google Sheets, relational database design in SQLite, and SQL-based business reporting.
+An end-to-end data analysis project using a real car-sharing dataset (Jan 2017 – Aug 2018). The project covers data cleaning in Google Sheets, relational database design in SQLite, and SQL-based business reporting.
 
 ---
 
@@ -10,18 +10,24 @@ Analysed hourly car-sharing demand data to answer key business questions for a f
 
 ---
 
-## 🗄️ Database Design
+## 📁 Data Tables (Google Drive)
 
-The raw data was cleaned and split into four relational tables:
+All four project tables are stored and accessible here:
 
-| Table | Key Columns |
+👉 [**View Tables on Google Drive**](https://drive.google.com/drive/folders/1ttTbkykd7dl12zZx0V4jR6bTI-j4qBVI?usp=drive_link)
+
+| Table | Description |
 |-------|-------------|
-| `CarSharing_df` | id, demand, weather_code, temp_code |
+| `CarSharing_df` | Main table — demand, weather_code, temp_code |
 | `time` | id, timestamp, season, hour, weekday, month |
 | `temperature` | temp_code, temp, temp_feel, temp_category |
 | `weather` | weather_code, weather condition |
 
-Tables are linked via foreign keys to form a star schema (see ERD).
+---
+
+## 🗄️ Database Design
+
+The raw data was cleaned and split into four relational tables linked via foreign keys to form a star schema.
 
 ---
 
@@ -63,11 +69,5 @@ Repeated the weather analysis for the highest-demand month to enable direct comp
 
 ---
 
-## 📁 Files
-
-- `CarSharing_df.csv` — main dataset
-- SQL query file — all queries with comments per question
-
----
-
 *Project completed as part of a data analytics course. Dataset covers Jan 2017 – Aug 2018.*
+
